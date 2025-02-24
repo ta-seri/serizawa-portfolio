@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="text-black hover:text-gray-700 text-3xl"
           >
-              <FaTwitter />
+              <FaXTwitter />
           </a>
           <a
               href="https://www.linkedin.com/in/tatsuki-serizawa/"
