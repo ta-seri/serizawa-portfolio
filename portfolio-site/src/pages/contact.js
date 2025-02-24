@@ -1,4 +1,4 @@
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 
 export default function Contact() {
     return (
@@ -15,7 +15,7 @@ export default function Contact() {
                 rel="noopener noreferrer"
                 className="text-black hover:text-gray-700 text-3xl"
             >
-                <FaTwitter />
+                <FaXTwitter />
             </a>
             <a
                 href="https://www.linkedin.com/in/tatsuki-serizawa/"
