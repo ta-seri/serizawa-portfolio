@@ -12,11 +12,11 @@ export default function About() {
     ];
   
     const techStack = [
-      "Python", "Next.js", "Tailwind CSS", "C", "アセンブリ", "Keras", "Pytorch", "Docker", "Azure",
+      "Python", "Next.js", "Tailwind CSS", "C", "アセンブリ", "Keras", "Pytorch", "PySpark", "LangChain", "Docker", "Azure",
     ];
 
     const usedData = [
-        "音声認識", "画像認識", "自然言語処理", "大規模テーブルデータ",
+        "音声認識", "画像認識", "自然言語処理", "LLM fine-tuning・RAG", "大規模テーブルデータ", "生存時間分析", "効果検証",
     ]
   
     return (
