@@ -1,6 +1,7 @@
 export default function Works() {
     const works = {
       techBlogs: [
+        { title: "JSAI2025参加レポート：対話AIとPhysical AIの最前線を追う, 2025", url: "https://www.ariseanalytics.com/tech-info/20250613" },
         { title: "論文から実装へ：スクラッチ開発者のためのAIエージェント入門, 2025", url: "https://www.ariseanalytics.com/activities/report/20250121/" },
         { title: "【JSAI2024】「LLM エージェントの人間との対話における 反芻的返答の親近感向上効果」についてポスター発表しました, 2024", url: "https://www.ariseanalytics.com/activities/report/20240619/" },
         { title: "LLM時代に人は対話AIを信頼できるか？Human Agent Interactionの視点から考える, 2023", url: "https://www.ariseanalytics.com/activities/report/20230920-2/" },
@@ -18,8 +19,15 @@ export default function Works() {
       competition: [
         { title: "SIGNATE (Expert)", url: "https://signate.jp/users/20983" },
       ],
+      books: [
+        { title: "AIと話そう！音声対話AIアプリの作り方, 2025", url: "https://techbookfest.org/product/mccChq68eRYX4kkHEEQb24?productVariantID=nzzs926HiCyHBWVTh94a8H" },
+      ],
+      speakers: [
+        { title: "JSAI参加報告会~生成AIに注目して~【 ABEJA × ARISE analytics 】, 2025", url: "https://ariseanalytics.connpass.com/event/355827/"},
+        { title: "AIエージェントとの対話を崩壊させない！長期対話に関する工夫を論文から探る at ARSE LLM勉強会, 2025", url: "https://ariseanalytics.connpass.com/event/346077/" },
+        { title: "データアナリティクスセミナー in 岩手県立大学, 2024", url: "https://note.ariseanalytics.com/n/nf8b8cf6f7b26" },
+      ],
       other: [
-        { title: "(登壇) データアナリティクスセミナー in 岩手県立大学, 2024", url: "https://note.ariseanalytics.com/n/nf8b8cf6f7b26" },
         { title: "(運営) LLM勉強会, 2024~", url: "https://connpass.com/user/ariseanalytics/open/" },
       ],
     };
@@ -44,11 +52,39 @@ export default function Works() {
             </ul>
           </div>
 
+          {/* 書籍 */}
+          <div className="text-center">
+            <h2 className="text-2xl font-semibold">Books</h2>
+            <ul className="mt-2 space-y-2">
+              {works.books.map((work, index) => (
+                <li key={index}>
+                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                    {work.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* テックブログ */}
           <div className="text-center">
             <h2 className="text-2xl font-semibold">Official Tech Blogs</h2>
             <ul className="mt-2 space-y-2">
               {works.techBlogs.map((work, index) => (
+                <li key={index}>
+                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                    {work.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* 登壇 */}
+          <div className="text-center">
+            <h2 className="text-2xl font-semibold">Speakers</h2>
+            <ul className="mt-2 space-y-2">
+              {works.speakers.map((work, index) => (
                 <li key={index}>
                   <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
                     {work.title}

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+
 export default function About() {
     const experiences = [
       { year: "2022 - 現在", role: "データサイエンティスト・AIエンジニア @ ARISE analytics" },
@@ -18,7 +19,15 @@ export default function About() {
     const usedData = [
         "音声認識", "画像認識", "自然言語処理", "LLM fine-tuning・RAG", "大規模テーブルデータ", "生存時間分析", "効果検証",
     ]
-  
+
+    const certifications = [
+      "Microsoft Certified: Azure Fundamentals",
+      "統計検定2級",
+      "データサイエンティスト検定リテラシーレベル",
+      "JDLA Deep Learning for GENERAL",
+      "実用数学技能検定2級",
+    ];
+
     return (
       <div className="min-h-screen bg-gray-100 text-gray-900 p-8">
         <h1 className="text-3xl font-bold text-center">About Me</h1>
@@ -31,8 +40,8 @@ export default function About() {
         {/* 簡単な自己紹介 */}
         <div className="mt-6 bg-white shadow-md rounded-lg p-6 max-w-2xl w-full text-center mx-auto">
             <p className="text-lg leading-relaxed">
-                元々ロボットに興味があり，中学・高校・大学とロボコンに出場．ロボット制作過程で頭脳となるAIに興味が湧き，大学3年次～大学院では機械学習関連技術について研究．
-                就職後もAIやデータ分析に関する業務を中心に従事．現在は生成AIを活用した対話システムやHuman Agent Interaction (HAI) に関心あり．
+                ロボットに興味があり，中学・高校・大学とロボコンに出場．ロボット制作過程で頭脳となるAIに興味が湧き，大学3年次～大学院では機械学習関連技術について研究．
+                就職後もAIやデータ分析に関する業務を中心に従事．現在は生成AIを活用した対話システムやHuman Agent Interaction (HAI)，Physical AIに関心あり．
                 また，メイン業務と並行してDevRelと呼ばれるような技術広報活動にも取り組み，勉強会などを開催している．
             </p>
         </div>
@@ -73,7 +82,25 @@ export default function About() {
             ))}
           </div>
         </div>
-  
+
+        {/* 取得資格セクション */}
+        <div className="mt-6">
+          <h2 className="text-2xl font-semibold">取得資格</h2>
+          {certifications.length > 0 ? (
+            <div className="mt-2 flex flex-wrap gap-3">
+              {certifications.map((cert, index) => (
+                <span key={index} className="px-4 py-2 bg-green-500 text-white rounded-full text-sm font-medium">
+                  {cert}
+                </span>
+              ))}
+            </div>
+          ) : (
+            <div className="mt-2 bg-white p-4 rounded-lg shadow">
+              <p className="text-gray-500 italic">現在、資格情報を準備中です</p>
+            </div>
+          )}
+        </div>
+
         <div className="mt-6 text-center">
           <a href="/" className="px-4 py-2 bg-gray-500 text-white rounded-md">Back to Home</a>
         </div>
