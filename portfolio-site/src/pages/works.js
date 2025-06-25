@@ -5,7 +5,7 @@ export default function Works() {
         { title: "論文から実装へ：スクラッチ開発者のためのAIエージェント入門, 2025", url: "https://www.ariseanalytics.com/activities/report/20250121/" },
         { title: "【JSAI2024】「LLM エージェントの人間との対話における 反芻的返答の親近感向上効果」についてポスター発表しました, 2024", url: "https://www.ariseanalytics.com/activities/report/20240619/" },
         { title: "LLM時代に人は対話AIを信頼できるか？Human Agent Interactionの視点から考える, 2023", url: "https://www.ariseanalytics.com/activities/report/20230920-2/" },
-        { title: "RAG (Retrieval Augmented Generation) を活用！LLMで外部データを参照する方法を解説, 2022", url: "https://www.ariseanalytics.com/activities/report/20230818-2/" },
+        { title: "RAG (Retrieval Augmented Generation) を活用！LLMで外部データを参照する方法を解説, 2023", url: "https://www.ariseanalytics.com/activities/report/20230818-2/" },
       ],
       blogs: [
         { title: "Qiita", url: "https://qiita.com/t_serizawa" },
