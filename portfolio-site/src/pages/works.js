@@ -17,7 +17,8 @@ export default function Works() {
         { title: "Emotion Recognition by Convolutional Neural Network Based on EEG-Images Plotting Time Series Data, 2019", url: "https://ebooks.iospress.nl/volumearticle/52677" },
       ],
       competition: [
-        { title: "SIGNATE (Expert)", url: "https://signate.jp/users/20983" },
+        { title: "AI創薬： 薬物動態パラメータ予測コンペ, SIGNATE, 17/699位 (銀メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=252d4bf7dcb244d693979ac9cdd43fc3"},
+        { title: "旅行パッケージの成約率予測コンペ, SIGNATE, 72/1,123位 (銅メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=17002dd84863499e90815a7c5ef2ee21" },
       ],
       books: [
         { title: "AIと話そう！音声対話AIアプリの作り方, 2025", url: "https://techbookfest.org/product/mccChq68eRYX4kkHEEQb24?productVariantID=nzzs926HiCyHBWVTh94a8H" },
@@ -94,6 +95,20 @@ export default function Works() {
             </ul>
           </div>
 
+          {/* Competiotion */}
+          <div className="text-center">
+            <h2 className="text-2xl font-semibold">Competiotion</h2>
+            <ul className="mt-2 space-y-2">
+              {works.competition.map((work, index) => (
+                <li key={index}>
+                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                    {work.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Blogs (カードデザイン) */}
           <div className="text-center">
             <h2 className="text-2xl font-semibold">Tech Blogs</h2>
@@ -112,25 +127,7 @@ export default function Works() {
             </div>
           </div>
 
-          {/* Competiotion (カードデザイン) */}
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Competiotion</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-              {works.competition.map((work, index) => (
-                <a
-                  key={index}
-                  href={work.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition"
-                >
-                  <h3 className="text-lg font-semibold text-gray-800">{work.title}</h3>
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* その他 */}
+          {/* その他
           <div className="text-center">
             <h2 className="text-2xl font-semibold">Others</h2>
             <ul className="mt-2 space-y-2">
@@ -142,7 +139,7 @@ export default function Works() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
   
         <div className="mt-6 text-center">
