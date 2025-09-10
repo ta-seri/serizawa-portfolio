@@ -17,8 +17,8 @@ export default function Works() {
         { title: "Emotion Recognition by Convolutional Neural Network Based on EEG-Images Plotting Time Series Data, 2019", url: "https://ebooks.iospress.nl/volumearticle/52677" },
       ],
       competition: [
-        { title: "AI創薬： 薬物動態パラメータ予測コンペ, SIGNATE, 17/699位 (銀メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=252d4bf7dcb244d693979ac9cdd43fc3"},
-        { title: "旅行パッケージの成約率予測コンペ, SIGNATE, 72/1,123位 (銅メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=17002dd84863499e90815a7c5ef2ee21" },
+        { title: "旅行パッケージの成約率予測コンペ, SIGNATE, 72/1,123位 (銅メダル), 2024", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=17002dd84863499e90815a7c5ef2ee21" },
+        { title: "AI創薬： 薬物動態パラメータ予測コンペ, SIGNATE, 17/699位 (銀メダル), 2019", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=252d4bf7dcb244d693979ac9cdd43fc3"},
       ],
       books: [
         { title: "AIと話そう！音声対話AIアプリの作り方, 2025", url: "https://techbookfest.org/product/mccChq68eRYX4kkHEEQb24?productVariantID=nzzs926HiCyHBWVTh94a8H" },
