@@ -1,6 +1,7 @@
 export default function Works() {
     const works = {
       techBlogs: [
+        { title: "LLM評価の現実と対策：LLM as a Judge実践で学んだ課題解決法, 2025", url: "https://www.ariseanalytics.com/tech-info/20250923" },
         { title: "JSAI2025参加レポート：対話AIとPhysical AIの最前線を追う, 2025", url: "https://www.ariseanalytics.com/tech-info/20250613" },
         { title: "論文から実装へ：スクラッチ開発者のためのAIエージェント入門, 2025", url: "https://www.ariseanalytics.com/activities/report/20250121/" },
         { title: "【JSAI2024】「LLM エージェントの人間との対話における 反芻的返答の親近感向上効果」についてポスター発表しました, 2024", url: "https://www.ariseanalytics.com/activities/report/20240619/" },
