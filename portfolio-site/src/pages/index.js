@@ -27,7 +27,7 @@ export default function Home() {
           I work on development using machine learning and generative AI. I am also involved in DevRel activities. Outside of work, I am interested in dialogue system utilizing generative AI, Human Agent Interaction (HAI) using generative AI and Physical AI.
         </p>
 
-        <div className="mt-6 mb-6">
+        <div className="mt-6 mb-6 text-center">
           <Link href="/about" className="px-4 py-2 bg-blue-500 text-white rounded-md">More About Me</Link>
         </div>
 
