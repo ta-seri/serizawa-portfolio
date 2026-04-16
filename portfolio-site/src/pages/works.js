@@ -21,6 +21,12 @@ export default function Works() {
       competition: [
         { year: "2024", title: "旅行パッケージの成約率予測コンペ, SIGNATE, 72/1,123位 (銅メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=17002dd84863499e90815a7c5ef2ee21" },
         { year: "2019", title: "AI創薬： 薬物動態パラメータ予測コンペ, SIGNATE, 17/699位 (銀メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=252d4bf7dcb244d693979ac9cdd43fc3" },
+        { year: "2015", title: "レスキューロボットコンテスト　ベストプレゼン賞" },
+        { year: "2012", title: "ロボカップジュニア　レスキュー部門　敢闘賞" },
+        { year: "2009", title: "ロボカップジュニア　静岡地区大会　準優勝 / 東海大会　9位" },
+      ],
+      projects: [
+        { year: "進行中", title: "ロボットアームSO-101とLeRobotフレームワークを用いた模倣学習を個人で実験中。Physical AIの実装レベルの理解を深めることが目的。", note: "[GitHubリポジトリのURLが決まり次第リンクを追加]" },
       ],
       books: [
         { year: "2025", title: "AIと話そう！音声対話AIアプリの作り方", url: "https://techbookfest.org/product/mccChq68eRYX4kkHEEQb24?productVariantID=nzzs926HiCyHBWVTh94a8H" },
@@ -40,9 +46,23 @@ export default function Works() {
         {items.map((work, index) => (
           <li key={index} className="flex gap-4">
             <span className="text-gray-500 shrink-0 w-12">{work.year}</span>
-            <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-              {work.title}
-            </a>
+            <span className="flex flex-col gap-1">
+              {work.url ? (
+                <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                  {work.title}
+                </a>
+              ) : (
+                <span>{work.title}</span>
+              )}
+              {work.github && (
+                <a href={work.github} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:underline text-sm">
+                  [GitHub]
+                </a>
+              )}
+              {work.note && (
+                <span className="text-gray-400 text-sm">{work.note}</span>
+              )}
+            </span>
           </li>
         ))}
       </ul>
@@ -79,10 +99,16 @@ export default function Works() {
               <WorkList items={works.speakers} />
             </div>
 
-            {/* Competiotion */}
+            {/* Competition */}
             <div>
-              <h2 className="text-2xl font-semibold">Competiotion</h2>
+              <h2 className="text-2xl font-semibold">Competition</h2>
               <WorkList items={works.competition} />
+            </div>
+
+            {/* Projects */}
+            <div>
+              <h2 className="text-2xl font-semibold">Projects</h2>
+              <WorkList items={works.projects} />
             </div>
 
             {/* Blogs (カードデザイン) */}

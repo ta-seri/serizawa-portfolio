@@ -11,7 +11,7 @@ export default function About() {
       { year: "2016 - 2018", role: "岩手県立大学ソフトウェア情報学部(編入) 学士" },
       { year: "2014 - 2016", role: "金沢工業大学工学部ロボティクス学科" },
     ];
-  
+
     const techStack = [
       "Python", "Next.js", "Tailwind CSS", "C", "アセンブリ", "Keras", "Pytorch", "PySpark", "LangChain", "Docker", "Azure",
     ];
@@ -41,7 +41,7 @@ export default function About() {
         {/* 簡単な自己紹介 */}
         <div className="mt-6 bg-white shadow-md rounded-lg p-6 max-w-2xl w-full mx-auto">
             <p className="text-lg leading-relaxed">
-                ロボットに興味があり，中学・高校・大学とロボコンに出場．ロボット制作過程で頭脳となるAIに興味が湧き，大学3年次～大学院では機械学習関連技術について研究．
+                ロボットに興味があり，中学・高校・大学とロボコンに出場し，ロボカップジュニアやレスキューロボットコンテストで入賞．ロボット制作過程で頭脳となるAIに興味が湧き，大学3年次～大学院では機械学習関連技術について研究．
                 就職後もAIやデータ分析に関する業務を中心に従事．現在は生成AIを活用した対話システムやHuman Agent Interaction (HAI)，Physical AIに関心あり．
                 また，メイン業務と並行してDevRelと呼ばれるような技術広報活動にも取り組み，勉強会などを開催している．
             </p>
