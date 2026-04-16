@@ -60,7 +60,7 @@ export default function Home() {
       </main>
 
       <footer className="p-4 bg-white text-center text-gray-600">
-        © 2025 My Portfolio
+        © 2026 My Portfolio
       </footer>
     </div>
   );
