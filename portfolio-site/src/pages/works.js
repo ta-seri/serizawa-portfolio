@@ -15,21 +15,21 @@ export default function Works() {
       ],
       papers: [
         { year: "2024", title: "LLMエージェントの人間との対話における反芻的返答の親近感向上効果", url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3Xin255/_article/-char/ja" },
-        { year: "2022", title: "Optimization of Convolutional Neural Network Using the Linearly Decreasing Weight Particle Swarm Optimization", url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_2S4IS2b03/_article/-char/ja/" },
+        { year: "2022", title: "Optimization of Convolutional Neural Network Using the Linearly Decreasing Weight Particle Swarm Optimization", url: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_2S4IS2b03/_article/-char/ja/", github: "https://github.com/ta-seri/LDWPSO-CNN" },
         { year: "2019", title: "Emotion Recognition by Convolutional Neural Network Based on EEG-Images Plotting Time Series Data", url: "https://ebooks.iospress.nl/volumearticle/52677" },
       ],
       competition: [
-        { year: "2024", title: "旅行パッケージの成約率予測コンペ, SIGNATE, 72/1,123位 (銅メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=17002dd84863499e90815a7c5ef2ee21" },
+        { year: "2024", title: "旅行パッケージの成約率予測コンペ, SIGNATE, 72/1,123位 (銅メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=17002dd84863499e90815a7c5ef2ee21", github: "https://github.com/ta-seri/SIGNATE-Cup-2024-Summer-Best-Solution" },
         { year: "2019", title: "AI創薬： 薬物動態パラメータ予測コンペ, SIGNATE, 17/699位 (銀メダル)", url: "https://user.competition.signate.jp/ja/competition/detail/?competition=252d4bf7dcb244d693979ac9cdd43fc3" },
-        { year: "2015", title: "レスキューロボットコンテスト　ベストプレゼン賞" },
+        { year: "2015", title: "レスキューロボットコンテスト　ベストプレゼン賞", url: "https://www.rescue-robot-contest.org/contest/15th-contest/honsen/bestpresen" },
         { year: "2012", title: "ロボカップジュニア　レスキュー部門　敢闘賞" },
         { year: "2009", title: "ロボカップジュニア　静岡地区大会　準優勝 / 東海大会　9位" },
       ],
       projects: [
-        { year: "進行中", title: "ロボットアームSO-101とLeRobotフレームワークを用いた模倣学習を個人で実験中。Physical AIの実装レベルの理解を深めることが目的。", note: "[GitHubリポジトリのURLが決まり次第リンクを追加]" },
+        { year: "進行中", title: "ロボットアームSO-101とLeRobotフレームワークを用いた模倣学習を個人で実験中。Physical AIの実装レベルの理解を深めることが目的。" },
       ],
       books: [
-        { year: "2025", title: "AIと話そう！音声対話AIアプリの作り方", url: "https://techbookfest.org/product/mccChq68eRYX4kkHEEQb24?productVariantID=nzzs926HiCyHBWVTh94a8H" },
+        { year: "2025", title: "AIと話そう！音声対話AIアプリの作り方", url: "https://techbookfest.org/product/mccChq68eRYX4kkHEEQb24?productVariantID=nzzs926HiCyHBWVTh94a8H", github: "https://github.com/ta-seri/TechBookFest18_webapp_voice_dialogue_backend" },
       ],
       speakers: [
         { year: "2025", title: "JSAI参加報告会~生成AIに注目して~【 ABEJA × ARISE analytics 】", url: "https://ariseanalytics.connpass.com/event/355827/" },
