@@ -21,6 +21,7 @@ export default function About() {
     ]
 
     const certifications = [
+      "AWS Certified Cloud Practitioner",
       "Microsoft Certified: Azure Fundamentals",
       "統計検定2級",
       "データサイエンティスト検定リテラシーレベル",

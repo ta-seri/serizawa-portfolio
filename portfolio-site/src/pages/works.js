@@ -1,6 +1,7 @@
 export default function Works() {
     const works = {
       techBlogs: [
+        { title: "NLP2026参加レポート：LLMの人間理解とPhysical AIから見る言語処理の広がり, 2026", url: "https://www.ariseanalytics.com/tech-info/20260327" },
         { title: "LLM評価の現実と対策：LLM as a Judge実践で学んだ課題解決法, 2025", url: "https://www.ariseanalytics.com/tech-info/20250923" },
         { title: "JSAI2025参加レポート：対話AIとPhysical AIの最前線を追う, 2025", url: "https://www.ariseanalytics.com/tech-info/20250613" },
         { title: "論文から実装へ：スクラッチ開発者のためのAIエージェント入門, 2025", url: "https://www.ariseanalytics.com/activities/report/20250121/" },
@@ -36,115 +37,117 @@ export default function Works() {
   
     return (
       <div className="min-h-screen bg-gray-100 text-gray-900 p-8 flex flex-col items-center justify-center">
-        <h1 className="text-3xl font-bold text-center">My Works</h1>
-  
-        <div className="mt-6 space-y-6">
+        <div className="w-full max-w-2xl">
+          <h1 className="text-3xl font-bold text-center">My Works</h1>
 
-          {/* 論文 */}
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Papers</h2>
-            <ul className="mt-2 space-y-2">
-              {works.papers.map((work, index) => (
-                <li key={index}>
-                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    {work.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <div className="mt-6 space-y-6">
 
-          {/* 書籍 */}
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Books</h2>
-            <ul className="mt-2 space-y-2">
-              {works.books.map((work, index) => (
-                <li key={index}>
-                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    {work.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* テックブログ */}
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Official Tech Blogs</h2>
-            <ul className="mt-2 space-y-2">
-              {works.techBlogs.map((work, index) => (
-                <li key={index}>
-                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    {work.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* 登壇 */}
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Speakers</h2>
-            <ul className="mt-2 space-y-2">
-              {works.speakers.map((work, index) => (
-                <li key={index}>
-                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    {work.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Competiotion */}
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Competiotion</h2>
-            <ul className="mt-2 space-y-2">
-              {works.competition.map((work, index) => (
-                <li key={index}>
-                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    {work.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Blogs (カードデザイン) */}
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Tech Blogs</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-              {works.blogs.map((work, index) => (
-                <a
-                  key={index}
-                  href={work.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition"
-                >
-                  <h3 className="text-lg font-semibold text-gray-800">{work.title}</h3>
-                </a>
-              ))}
+            {/* 論文 */}
+            <div>
+              <h2 className="text-2xl font-semibold">Papers</h2>
+              <ul className="mt-2 space-y-2">
+                {works.papers.map((work, index) => (
+                  <li key={index}>
+                    <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                      {work.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
+
+            {/* 書籍 */}
+            <div>
+              <h2 className="text-2xl font-semibold">Books</h2>
+              <ul className="mt-2 space-y-2">
+                {works.books.map((work, index) => (
+                  <li key={index}>
+                    <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                      {work.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* テックブログ */}
+            <div>
+              <h2 className="text-2xl font-semibold">Official Tech Blogs</h2>
+              <ul className="mt-2 space-y-2">
+                {works.techBlogs.map((work, index) => (
+                  <li key={index}>
+                    <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                      {work.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* 登壇 */}
+            <div>
+              <h2 className="text-2xl font-semibold">Speakers</h2>
+              <ul className="mt-2 space-y-2">
+                {works.speakers.map((work, index) => (
+                  <li key={index}>
+                    <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                      {work.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Competiotion */}
+            <div>
+              <h2 className="text-2xl font-semibold">Competiotion</h2>
+              <ul className="mt-2 space-y-2">
+                {works.competition.map((work, index) => (
+                  <li key={index}>
+                    <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                      {work.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Blogs (カードデザイン) */}
+            <div>
+              <h2 className="text-2xl font-semibold">Tech Blogs</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                {works.blogs.map((work, index) => (
+                  <a
+                    key={index}
+                    href={work.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition"
+                  >
+                    <h3 className="text-lg font-semibold text-gray-800">{work.title}</h3>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* その他
+            <div>
+              <h2 className="text-2xl font-semibold">Others</h2>
+              <ul className="mt-2 space-y-2">
+                {works.other.map((work, index) => (
+                  <li key={index}>
+                    <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                      {work.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div> */}
           </div>
 
-          {/* その他
-          <div className="text-center">
-            <h2 className="text-2xl font-semibold">Others</h2>
-            <ul className="mt-2 space-y-2">
-              {works.other.map((work, index) => (
-                <li key={index}>
-                  <a href={work.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    {work.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div> */}
-        </div>
-  
-        <div className="mt-6 text-center">
-          <a href="/" className="px-4 py-2 bg-gray-500 text-white rounded-md">Back to Home</a>
+          <div className="mt-6 text-center">
+            <a href="/" className="px-4 py-2 bg-gray-500 text-white rounded-md">Back to Home</a>
+          </div>
         </div>
       </div>
     );

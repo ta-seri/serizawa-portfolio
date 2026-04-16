@@ -21,10 +21,10 @@ export default function Home() {
         
         <p className="mt-4 text-center text-lg">
           データサイエンティスト・AIエンジニアとして，機械学習やLLMを活用した分析・開発に取り組んでいます．また，最近は DevRelと呼ばれるような技術広報活動にも取り組んでいます．
-          業務外では，LLMを活用したAIエージェントやHuman Agent Interaction (HAI)，Physical AIに興味があります．
+          業務外では，生成AIを活用した対話システムやHuman Agent Interaction (HAI)，Physical AIに興味があります．
         </p>
         <p className="mt-4 text-center text-lg">
-          I work on development using machine learning and generative AI. I am also involved in DevRel activities. Outside of work, I am interested in AI agents, Human Agent Interaction (HAI) using LLM and Physical AI.
+          I work on development using machine learning and generative AI. I am also involved in DevRel activities. Outside of work, I am interested in dialogue system utilizing generative AI, Human Agent Interaction (HAI) using generative AI and Physical AI.
         </p>
 
         <div className="mt-6 mb-6">
