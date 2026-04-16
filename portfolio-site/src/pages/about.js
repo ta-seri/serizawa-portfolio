@@ -39,7 +39,7 @@ export default function About() {
         </div>
 
         {/* 簡単な自己紹介 */}
-        <div className="mt-6 bg-white shadow-md rounded-lg p-6 max-w-2xl w-full text-center mx-auto">
+        <div className="mt-6 bg-white shadow-md rounded-lg p-6 max-w-2xl w-full mx-auto">
             <p className="text-lg leading-relaxed">
                 ロボットに興味があり，中学・高校・大学とロボコンに出場．ロボット制作過程で頭脳となるAIに興味が湧き，大学3年次～大学院では機械学習関連技術について研究．
                 就職後もAIやデータ分析に関する業務を中心に従事．現在は生成AIを活用した対話システムやHuman Agent Interaction (HAI)，Physical AIに関心あり．

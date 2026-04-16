@@ -10,20 +10,20 @@ export default function Home() {
         <title>Serizawa's Portfolio</title>
       </Head>
 
-      <main className="container mx-auto p-8 text-center">
-        <h2 className="text-3xl font-bold">Welcome to Serizawa's Portfolio</h2>
-        <p className="text-lg text-gray-600 mt-2">芹澤龍生 / Data Scientist, AI Engineer</p>
+      <main className="container mx-auto p-8 max-w-2xl">
+        <h2 className="text-3xl font-bold text-center">Welcome to Serizawa's Portfolio</h2>
+        <p className="text-lg text-gray-600 mt-2 text-center">芹澤龍生 / Data Scientist, AI Engineer</p>
 
         <div className="flex justify-center mt-6 space-x-4">
           <Image src="/serizawa.jpg" width={150} height={150} className="rounded-full" alt="Profile 1" />
           <Image src="/seri_datasci.jpg" width={150} height={150} className="rounded-full" alt="Profile 2" />
         </div>
-        
-        <p className="mt-4 text-center text-lg">
+
+        <p className="mt-4 text-lg">
           データサイエンティスト・AIエンジニアとして，機械学習やLLMを活用した分析・開発に取り組んでいます．また，最近は DevRelと呼ばれるような技術広報活動にも取り組んでいます．
           業務外では，生成AIを活用した対話システムやHuman Agent Interaction (HAI)，Physical AIに興味があります．
         </p>
-        <p className="mt-4 text-center text-lg">
+        <p className="mt-4 text-lg">
           I work on development using machine learning and generative AI. I am also involved in DevRel activities. Outside of work, I am interested in dialogue system utilizing generative AI, Human Agent Interaction (HAI) using generative AI and Physical AI.
         </p>
 
